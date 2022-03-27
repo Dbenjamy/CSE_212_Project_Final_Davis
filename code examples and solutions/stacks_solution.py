@@ -1,3 +1,31 @@
+#%%
+from random import randint
+
+# Used to encode the message. You will need to use
+# it when you decode the message.
+key = randint(1,26)
+# Only lowercase letters are encoded. This range is
+# the decimel representation for those characters.
+char_range = list(range(97,123))
+
+def encoder(message):
+    encoded_string = ''
+    for char in message:
+        # Check that it is a letter
+        if char.isalpha():
+            # Get the decimal representation and
+            # add key to change it.
+            char_num =  ord(char.lower()) + key
+            if char_num not in char_range:
+                char_num = char_num - 26
+            # Turn char_num into encoded letter and
+            # add it to the encoded string.
+            encoded_string += chr(char_num)
+        else:
+            # We are not encoding any other symbol.
+            encoded_string += char
+    return encoded_string
+#%%
 # Alternative sample
 def char_frequency(the_string):
     # Turning the string into a list so we can use
@@ -19,28 +47,3 @@ def char_frequency(the_string):
 
 freq = char_frequency('Hello world!')
 print(freq)
-#%%
-from random import randint
-
-
-key = randint(1,26)
-
-char_range = list(range(97,123))
-
-def encoder(message):
-    encoded_string = ''
-    for char in message:
-        # Check that it is a letter
-        if char.isalpha():
-            # Get the decimal representation and
-            # add key to change it.
-            char_num =  ord(char.lower()) + key
-            if char_num not in char_range:
-                char_num = char_num - 26
-            # Turn char_num into encoded letter and
-            # add it to the encoded string.
-            encoded_string += chr(char_num)
-        else:
-            # We are not encoding any other symbol.
-            encoded_string += char
-    return encoded_string

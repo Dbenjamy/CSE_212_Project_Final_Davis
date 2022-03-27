@@ -69,7 +69,7 @@ print(freq) # {'!': 1, 'd': 1, 'l': 3, 'r': 1, 'o': 2, 'w': 1, ' ': 1, 'e': 1, '
 #### Try it Yourself
 Below is a simple function to encode a string message. Your goal is to make the decoding function. Try your best, and when you're done, look at the provided sample solution and compare your work.
 You are to assume that all letters in the message will be lowercase. Numbers, spaces, and symbols are not changed.
-
+[Sample Solution](./code%20examples%20and%20solutions/stacks_solution.py)
 ```python
 # Used to generate the encode/decode key.
 from random import randint
