@@ -2,7 +2,7 @@
 ###Intro to Data Structures
 
 ####**<span style="color:blue"> I.</span>** [Stacks](1-Stacks.md)
-- Operations with a list
+- Stacking a log pile
 - Connection to functions
 - Example Code
 - Try it out
