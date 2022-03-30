@@ -1,4 +1,29 @@
 #%%
+
+def word_flip(the_string):
+    flipped = ''
+    current_word = ''
+    for i in range(len(the_string)):
+        if the_string[i].isalpha():
+            current_word += the_string[i]
+
+        if not the_string[i].isalpha() or i + 1 > len(the_string):
+            if current_word != '':
+                
+        # else:
+        #     if current_word != '':
+        #         flipped += current_word[-1:]
+        #         current_word = ''
+        #         current_word += letter
+    return flipped
+
+print('flipped: [' + word_flip(' how are YOU!') + ']')
+
+
+
+
+
+#%%
 from random import randint
 
 # Used to encode the message. You will need to use

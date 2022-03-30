@@ -70,39 +70,19 @@ print(freq) # {'!': 1, 'd': 1, 'l': 3, 'r': 1, 'o': 2, 'w': 1, ' ': 1, 'e': 1, '
 Below is a simple function to encode a string message. Your goal is to make the decoding function. Try your best, and when you're done, look at the provided sample solution and compare your work.
 You are to assume that all letters in the message will be lowercase. Numbers, spaces, and symbols are not changed.
 [Sample Solution](./code%20examples%20and%20solutions/stacks_solution.py)
+
 ```python
-# Used to generate the encode/decode key.
-from random import randint
-
-# Used to encode the message. You will need to use
-# it when you decode the message.
-key = randint(1,26)
-# Only lowercase letters are encoded. This range is
-# the decimel representation for those characters.
-char_range = list(range(97,123))
-
-def encoder(message):
-    encoded_string = ''
-    for char in message:
-        # Check that it is a letter
-        if char.isalpha():
-            # Get the decimal representation and
-            # add key to change it.
-            char_num =  ord(char.lower()) + key
-            if char_num not in char_range:
-                char_num = char_num - 26
-            # Turn char_num into encoded letter and
-            # add it to the encoded string.
-            encoded_string += chr(char_num)
+def word_flip(the_string):
+    flipped = ''
+    current_word = ''
+    for letter in the_string:
+        if letter.isalpha():
+            current_word += letter
         else:
-            # We are not encoding any other symbol.
-            encoded_string += char
-    return encoded_string
+            if current_word is not '':
+                flipped += current_word
+                current_word = ''
+                current_word += letter
+    return flipped
 
 ```
-
-
-
-
-
-
