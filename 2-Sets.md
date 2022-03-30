@@ -7,7 +7,7 @@
     </span>
 </p>
 
-From the last lesson, we went over Stacks. They are useful when you have to work with items in sequential order. In stacks and lists, values are remembered in order. But sometimes when we work with data, we are not worried about the order that we look at it. 
+Last time we went over Stacks. They are useful when you have to work with items in sequential order. In stacks and lists, values are remembered in order. But sometimes when we work with data, we are not worried about the order that we look at it. 
 #### Setting Sets Apart
  When you check for a value in a list, you have to search the entire list, which takes $O(n)$ time.
  
@@ -66,3 +66,5 @@ second_grocery_list = {'milk','butter','cheese','lettuce','tomatos','carrets','o
 combined_list = assemble_grocery_list(first_grocery_list, second_grocery_list)
 print(combined_list)
 ```
+##### Try it Yourself
+
