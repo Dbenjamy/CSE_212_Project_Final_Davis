@@ -48,7 +48,21 @@ The properties of sets make them useful for certain problems. You can quickly se
 
 ##### Example in Python
 
-In Python we declare a set like a list but with {} instead of []. Below is an example of how sets can be used.
+In Python we declare a set like a list but with {} instead of []. Below is an example of how sets can be used. Two roomates are putting together a shopping list. They each make their own list. And when they put it together, they only need to keep what isn't on the other's list.
 ```python
+def assemble_grocery_list(gro_one,gro_two):
+    final_grocery_list = set()
+    for item in gro_one:
+        final_grocery_list.add(item)
+    # Since sets cannot have duplicates, this will only add
+    # new values.
+    for item in gro_two:
+        final_grocery_list.add(item)
+    return final_grocery_list
 
+first_grocery_list = {'eggs','milk','bread','apples','carrets','beef'}
+second_grocery_list = {'milk','butter','cheese','lettuce','tomatos','carrets','onions','cabbage'}
+
+combined_list = assemble_grocery_list(first_grocery_list, second_grocery_list)
+print(combined_list)
 ```
