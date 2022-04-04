@@ -1,15 +1,16 @@
-def assemble_grocery_list(gro_one,gro_two):
-    final_grocery_list = set()
-    for item in gro_one:
-        final_grocery_list.add(item)
-    # Since sets cannot have duplicates, this will only add
-    # new values.
-    for item in gro_two:
-        final_grocery_list.add(item)
-    return final_grocery_list
+# This is one way to implement 'intersection':
 
-first_grocery_list = {'eggs','milk','bread','apples','carrets','beef'}
-second_grocery_list = {'milk','butter','cheese','lettuce','tomatos','carrets','onions','cabbage'}
+def find_openings(sched1,sched2):
+    openings = set()
+    for item in sched1:
+        # Remember that checking for membership
+        # is very efficient.
+        if item in sched2:
+            openings.add(item)
+    return openings
 
-combined_list = assemble_grocery_list(first_grocery_list, second_grocery_list)
-print(combined_list)
+
+stacy_schedule = {'9AM','10AM','12PM','1PM','2PM','4PM','5PM'}
+markus_schedule = {'7AM','8AM','11PM','2PM','3PM'}
+
+print(find_openings(stacy_schedule,markus_schedule))
