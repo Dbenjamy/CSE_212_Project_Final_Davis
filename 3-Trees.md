@@ -1,6 +1,6 @@
 ### Trees
-[Home]("0-Welcome.md")
-[Previous - Sets]("2-Sets.md"")
+- [Home]("0-Welcome.md")
+- [Previous - Sets]("2-Sets.md"")
 
 To traverse a **tree** data structure, you have to start at the **root** of the tree. Each **node** in the tree, including the root node, will have a link to other nodes in the tree.
 There is only allowed to be one path to any node. If there is more than one path then it is a graph.
@@ -131,5 +131,5 @@ print(tree.check(80)) # True
 print(tree.check(91)) # False
 ```
 
-[Home]("0-Welcome.md")
-[Previous - Sets]("2-Sets.md")
+- [Home]("0-Welcome.md")
+- [Previous - Sets]("2-Sets.md")

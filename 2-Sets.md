@@ -1,7 +1,7 @@
 ### Sets
-[Home]("0-Welcome.md")
-[Previous - Stacks]("1-Stacks.md")
-[Next - Trees]("3-Trees.md")
+- [Home]("0-Welcome.md")
+- [Previous - Stacks]("1-Stacks.md")
+- [Next - Trees]("3-Trees.md")
 
 #### Setting Sets Apart
 Last time we went over Stacks. They are useful when you must work with items in sequential order. In stacks and lists, values are remembered in order. But sometimes when we work with data, we are not worried about the order we look at it. 
@@ -101,6 +101,6 @@ markus_schedule = {'7AM','8AM','11PM','2PM','3PM'}
 
 print(find_openings(stacy_schedule,markus_schedule))
 ```
-[Home]("0-Welcome.md")
-[Previous - Stacks]("1-Stacks.md")
-[Next - Trees]("3-Trees.md")
+- [Home]("0-Welcome.md")
+- [Previous - Stacks]("1-Stacks.md")
+- [Next - Trees]("3-Trees.md")

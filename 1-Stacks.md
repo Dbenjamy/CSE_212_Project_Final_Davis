@@ -1,7 +1,7 @@
 ### Stacks
-[Home]("0-Welcome.md")
-[Previous - Big O Notation]("0.5-Big-O-Notation.md")
-[Next - Sets]("2-Sets.md")
+- [Home]("0-Welcome.md")
+- [Previous - Big O Notation]("0.5-Big-O-Notation.md")
+- [Next - Sets]("2-Sets.md")
 
 #### Stocking a Woodpile
 A **stack** is a data structure that is organized by the order in which items or tasks are added or removed.
@@ -41,15 +41,11 @@ When the function is executed, it points back to where it is called, and the fun
 
 You cannot finish a line of code until the functions it has called has been executed. The stack can only be worked on from **top** to **bottom**.
 
-<!-- 
 The following are common operations you can perform on a stack. Depending on the stack you are working with, some of these operations may be automated (such a the stack in functions). We will use a list as an example.
 |Python Code|Explanation|Automated example|
 |---|---|---|
 |list.append(item)|Adds item to end of list. Takes O(**1**) time.|Function is called, and **pushed** to function stack.
 |list.pop()|Removes item from end of list. Takes O(**n**) time.|When a function is finished, it is **popped** off function stack and returns a value.|
-|||| -->
-
-
 
 #### Example Code
 The following code counts how many times each character in a string occurs by using stack opperations.
@@ -94,6 +90,6 @@ def flipped(the_string):
 
 print(f'Flipped: {flipped("this is a sentance")}')
 ```
-[Home]("0-Welcome.md")
-[Previous - Big O Notation]("0.5-Big-O-Notation.md")
-[Next - Sets]("2-Sets.md")
+- [Home]("0-Welcome.md")
+- [Previous - Big O Notation]("0.5-Big-O-Notation.md")
+- [Next - Sets]("2-Sets.md")
