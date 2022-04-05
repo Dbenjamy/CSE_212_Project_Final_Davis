@@ -1,7 +1,7 @@
 ### Stacks
-- [Home]("0-Welcome.md")
-- [Previous - Big O Notation]("0.5-Big-O-Notation.md")
-- [Next - Sets]("2-Sets.md")
+- [Home](0-Welcome.md)
+- [Previous - Big O Notation](0.5-Big-O-Notation.md)
+- [Next - Sets](2-Sets.md)
 
 #### Stocking a Woodpile
 A **stack** is a data structure that is organized by the order in which items or tasks are added or removed.
@@ -90,6 +90,6 @@ def flipped(the_string):
 
 print(f'Flipped: {flipped("this is a sentance")}')
 ```
-- [Home]("0-Welcome.md")
-- [Previous - Big O Notation]("0.5-Big-O-Notation.md")
-- [Next - Sets]("2-Sets.md")
+- [Home](0-Welcome.md)
+- [Previous - Big O Notation](0.5-Big-O-Notation.md)
+- [Next - Sets](2-Sets.md)
