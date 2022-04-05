@@ -101,5 +101,6 @@ markus_schedule = {'7AM','8AM','11PM','2PM','3PM'}
 
 print(find_openings(stacy_schedule,markus_schedule))
 ```
+[Home]("0-Welcome.md")
 [Previous - Stacks]("1-Stacks.md")
 [Next - Trees]("3-Trees.md")

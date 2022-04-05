@@ -94,5 +94,6 @@ def flipped(the_string):
 
 print(f'Flipped: {flipped("this is a sentance")}')
 ```
+[Home]("0-Welcome.md")
 [Previous - Big O Notation]("0.5-Big-O-Notation.md")
 [Next - Sets]("2-Sets.md")
