@@ -59,6 +59,7 @@ print(prefix_evaluation(expression))
 ```
 
 ![](/images/travers_expression.bmp)
+
 The code above takes a binary tree as input (a nested list). As you follow along with the steps below, it can help to follow the image provided.
 1. The first and second ```if``` statements check if we are looking at a subtree. When we pass in our tree named ```expression```, it checks the two children of the Root node **+**.
 2. The first child, **2**, is a leaf node, so we don't need to evaluate it further for the final expression.
